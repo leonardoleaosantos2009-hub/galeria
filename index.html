@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vitrine e galeria de projetos web de Leonardo Leão dos Santos, Desenvolvedor de Sistemas Full-Stack em Botucatu, SP.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="Leonardo.dev | Vitrine &amp; Galeria Web">
+  <meta property="og:description" content="Projetos web, APIs, bancos de dados e Arduino de Leonardo Leão dos Santos.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E💻%3C/text%3E%3C/svg%3E">
+  <title>Leonardo.dev | Vitrine & Galeria Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <header class="nav">
+    <a class="logo" href="#top">&lt;Leonardo.dev /&gt;</a>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#servicos">O que eu faço</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#stack">Stack</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <span class="tag"><i class="dot"></i> aberto a oportunidades</span>
+        <h1>Transformo ideias em <span class="neon">interfaces</span> e sistemas que funcionam.</h1>
+        <p>Sou o Leonardo, Desenvolvedor de Sistemas Full-Stack em formação. Aqui você vê o que eu construo: sites, APIs, bancos de dados e até hardware com Arduino.</p>
+        <div class="actions">
+          <a class="btn primary" href="#galeria">Ver galeria</a>
+          <a class="btn ghost" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="bar"><i></i><i></i><i></i><span>leonardo.js</span></div>
+        <pre><code><b class="k">const</b> dev = {
+  nome: <b class="s">"Leonardo Leão"</b>,
+  local: <b class="s">"Botucatu, SP"</b>,
+  curso: <b class="s">"Téc. Desenv. de Sistemas"</b>,
+  emCurso: <b class="s">"Machine Learning"</b>,
+  stack: [<b class="s">"HTML"</b>, <b class="s">"CSS"</b>, <b class="s">"JS"</b>,
+          <b class="s">"Node"</b>, <b class="s">"MySQL"</b>, <b class="s">"C++"</b>],
+  busca: <b class="s">"Estágio / Júnior"</b>,
+  aprendendo: <b class="k">true</b>
+};<span class="cursor"></span></code></pre>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="stats">
+      <div><strong>7</strong><span>projetos na galeria</span></div>
+      <div><strong>10+</strong><span>tecnologias</span></div>
+      <div><strong>2</strong><span>cursos no SENAI</span></div>
+      <div><strong>100%</strong><span>vontade de aprender</span></div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <header class="head">
+        <span class="eyebrow">// o que eu faço</span>
+        <h2>Do visual ao banco de dados</h2>
+        <p>Três frentes onde eu já coloquei a mão na massa durante meus estudos e projetos.</p>
+      </header>
+
+      <div class="cards3">
+        <article class="card glass">
+          <div class="icon">🎨</div>
+          <h3>Interfaces web</h3>
+          <p>Páginas responsivas com HTML5 e CSS3, cards, seções, botões e animações, com foco em ficar bonito e organizado.</p>
+        </article>
+        <article class="card glass">
+          <div class="icon">⚙️</div>
+          <h3>APIs e Back-End</h3>
+          <p>APIs REST com Node.js e Express, CRUD completo, validação de campos, códigos HTTP e exclusão lógica.</p>
+        </article>
+        <article class="card glass">
+          <div class="icon">🗄️</div>
+          <h3>Banco de dados</h3>
+          <p>Modelagem relacional, DER, chaves primárias e estrangeiras, comandos DDL e DML, Stored Procedures e Functions no MySQL.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <header class="head">
+        <span class="eyebrow">// galeria</span>
+        <h2>Meus projetos</h2>
+        <p>Clique nos filtros para navegar por categoria.</p>
+      </header>
+
+      <input type="radio" name="f" id="f-all" checked>
+      <input type="radio" name="f" id="f-web">
+      <input type="radio" name="f" id="f-back">
+      <input type="radio" name="f" id="f-hw">
+
+      <div class="filters">
+        <label for="f-all">Todos</label>
+        <label for="f-web">Front-End</label>
+        <label for="f-back">Back-End & Dados</label>
+        <label for="f-hw">Hardware</label>
+      </div>
+
+      <div class="grid">
+
+        <article class="proj" data-cat="web back">
+          <div class="thumb t-cad" aria-hidden="true">
+            <div class="mini-table">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="body">
+            <h3>Sistema de Cadastro de Produtos</h3>
+            <p>Aplicação Full-Stack com formulário interativo, API REST em Node.js e Express, MySQL e desativação lógica (soft delete).</p>
+            <ul class="chips"><li>Full-Stack</li><li>Node.js</li><li>MySQL</li><li>Axios</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/cadastro_produto">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="back">
+          <div class="thumb t-lib" aria-hidden="true">
+            <div class="books"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="body">
+            <h3>Papyro: Gestão de Biblioteca</h3>
+            <p>Banco MySQL com 4 tabelas relacionadas (livro, leitor, exemplar e empréstimo) e API REST organizada em rotas e controladores. Em desenvolvimento.</p>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>MySQL</li><li>API REST</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/papyro-db">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="back">
+          <div class="thumb t-api" aria-hidden="true">
+            <div class="routes">
+              <span class="get">GET /produtos</span>
+              <span class="post">POST /produtos</span>
+              <span class="put">PUT /produtos/2</span>
+              <span class="del">DELETE /produtos/3</span>
+            </div>
+          </div>
+          <div class="body">
+            <h3>API REST Supermercado</h3>
+            <p>CRUD completo de produtos com validação de campos, códigos HTTP corretos (201, 400, 404) e persistência em arquivo JSON.</p>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>API REST</li><li>JSON</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/API-supermercado">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="back">
+          <div class="thumb t-park" aria-hidden="true">
+            <div class="park"><b>P</b><span>R$ 8,00 / hora</span></div>
+          </div>
+          <div class="body">
+            <h3>Estacionamento DB</h3>
+            <p>Banco MySQL para gerenciar veículos e proprietários, com Stored Procedures de cadastro e saída e uma Function que calcula a tarifa automaticamente.</p>
+            <ul class="chips"><li>MySQL</li><li>Procedures</li><li>Functions</li><li>Modelagem</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/Estacionamento-DB">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="back">
+          <div class="thumb t-db" aria-hidden="true">
+            <div class="er"><span>cliente</span><span>pedido</span><span>produto</span></div>
+          </div>
+          <div class="body">
+            <h3>Modelagem de Banco de Dados</h3>
+            <p>Modelos relacionais e DER com entidades, atributos, chaves primárias e estrangeiras, usando DDL e DML no MySQL.</p>
+            <ul class="chips"><li>SQL</li><li>DDL</li><li>DML</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/DDL-DML-">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="hw">
+          <div class="thumb t-sensor" aria-hidden="true">
+            <div class="waves"><i></i><i></i><i></i></div>
+          </div>
+          <div class="body">
+            <h3>Sensor de Estacionamento</h3>
+            <p>Sensor ultrassônico com Arduino UNO que mede a distância de obstáculos, programado em C++.</p>
+            <ul class="chips"><li>C++</li><li>Arduino</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub/Sensor-de-Estacionamento-Ultrassonico-com-Arduino">Ver no GitHub →</a>
+          </div>
+        </article>
+
+        <article class="proj" data-cat="web">
+          <div class="thumb t-web" aria-hidden="true">
+            <div class="wire"><span class="w1"></span><span class="w2"></span><span class="w3"></span><span class="w3"></span><span class="w3"></span></div>
+          </div>
+          <div class="body">
+            <h3>Currículo Online</h3>
+            <p>Meu site pessoal com tema escuro, estilo código, competências, projetos e até uma API de teste interativa.</p>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+            <a class="link" target="_blank" rel="noopener" href="https://leonardoleaosantos2009-hub.github.io/curriculo/">Abrir site →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <header class="head">
+        <span class="eyebrow">// stack</span>
+        <h2>Ferramentas do dia a dia</h2>
+      </header>
+      <ul class="stack">
+        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Axios</li><li>Node.js</li>
+        <li>Express</li><li>SQL</li><li>MySQL</li><li>Stored Procedures</li><li>C++</li><li>Arduino</li>
+        <li>Git</li><li>GitHub</li><li>Machine Learning (aprendendo)</li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="cta" id="contato">
+      <h2>Bora criar algo juntos?</h2>
+      <p>Estou aberto a estágios, vagas júnior e projetos colaborativos.</p>
+      <div class="actions center">
+        <a class="btn primary" href="mailto:leonardoleaosantos2009@gmail.com">Enviar e-mail</a>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://github.com/leonardoleaosantos2009-hub">GitHub</a>
+        <a class="btn ghost" href="https://leonardoleaosantos2009-hub.github.io/curriculo/">Currículo online</a>
+      </div>
+      <small>📍 Botucatu, SP · leonardoleaosantos2009@gmail.com</small>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    © Leonardo Leão dos Santos · Desenvolvedor de Sistemas · feito com HTML e CSS puro
+  </footer>
+
+</body>
+</html>
